@@ -16,6 +16,7 @@
 		9F9CC63628356E2200BA630E /* SwiftUISlotDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CC63528356E2200BA630E /* SwiftUISlotDemoUITestsLaunchTests.swift */; };
 		9F9CC643283579A900BA630E /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CC642283579A900BA630E /* LocalizedString.swift */; };
 		9F9CC64528357A5000BA630E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9CC64428357A5000BA630E /* ViewModel.swift */; };
+		9FC58E852837F04B00064B1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC58E842837F04B00064B1D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9F9CC63528356E2200BA630E /* SwiftUISlotDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUISlotDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F9CC642283579A900BA630E /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		9F9CC64428357A5000BA630E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		9FC58E842837F04B00064B1D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9F9CC61828356E1E00BA630E /* SwiftUISlotDemoApp.swift */,
+				9FC58E842837F04B00064B1D /* CardView.swift */,
 				9F9CC61A28356E1E00BA630E /* ContentView.swift */,
 				9F9CC642283579A900BA630E /* LocalizedString.swift */,
 				9F9CC64428357A5000BA630E /* ViewModel.swift */,
@@ -267,6 +270,7 @@
 				9F9CC61928356E1E00BA630E /* SwiftUISlotDemoApp.swift in Sources */,
 				9F9CC64528357A5000BA630E /* ViewModel.swift in Sources */,
 				9F9CC643283579A900BA630E /* LocalizedString.swift in Sources */,
+				9FC58E852837F04B00064B1D /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
