@@ -5,7 +5,8 @@ struct ContentView: View {
     
     @State  var creditScore = 0
     @State  var symbols = ["apple", "cherry", "star"]
-    @State var numbers = [0,1,2]
+    @State  var numbers = [0,1,2]
+    @State  var backgroundColor = Color.white
     
     var body: some View {
         ZStack{
@@ -37,9 +38,9 @@ struct ContentView: View {
                 //Cards
                 HStack{
                     Spacer()
-                    CardView(symbol: $symbols[numbers[0]])
-                    CardView(symbol: $symbols[numbers[1]])
-                    CardView(symbol: $symbols[numbers[2]])
+                    CardView(symbol: $symbols[numbers[0]], backgroundColor: $backgroundColor)
+                    CardView(symbol: $symbols[numbers[1]], backgroundColor: $backgroundColor)
+                    CardView(symbol: $symbols[numbers[2]], backgroundColor: $backgroundColor)
                     Spacer()
                 }
                 

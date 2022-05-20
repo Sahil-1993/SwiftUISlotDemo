@@ -21,11 +21,13 @@ struct ViewModel {
         
         if (contentView.numbers[0], contentView.numbers[1]) == (contentView.numbers[1], contentView.numbers[2]) {
             contentView.creditScore += 50
+            contentView.backgroundColor = .green
         }else {
             if contentView.creditScore == 0 {
                 print(AppStrings.youLost)
             }else {
                 contentView.creditScore -= 50
+                contentView.backgroundColor = .white
             }
         }
 
