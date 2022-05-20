@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct CardView: View {
+    @Binding var symbol:String
     var body: some View {
-        Image("image1")
+        Image(symbol)
             .resizable()
             .aspectRatio(1, contentMode: .fit)
             .background(Color.white.opacity(0.5))
@@ -19,6 +20,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(symbol: Binding.constant("image1"))
     }
 }

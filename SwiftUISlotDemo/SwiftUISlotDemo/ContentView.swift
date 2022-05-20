@@ -4,14 +4,14 @@ import SwiftUI
 struct ContentView: View {
     
     @State  var creditScore = 0
-    @State  var slot1 = "image1"
-    @State  var slot2 = "image2"
-    @State  var slot3 = "image3"
+    @State  var symbols = ["apple", "cherry", "star"]
+    @State var numbers = [0,1,2]
     
     var body: some View {
         ZStack{
             
             Rectangle().foregroundColor(AppColor.darkYellow).edgesIgnoringSafeArea(.all)
+            
             Rectangle().foregroundColor(AppColor.lightYellow).rotationEffect(Angle(degrees: 45)).edgesIgnoringSafeArea(.all)
             
             VStack {
@@ -37,23 +37,9 @@ struct ContentView: View {
                 //Cards
                 HStack{
                     Spacer()
-                    Image(slot1)
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
-                   
-                    Image(slot2)
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
-                   
-                    Image(slot3)
-                        .resizable()
-                        .aspectRatio(1, contentMode: .fit)
-                        .background(Color.white.opacity(0.5))
-                        .cornerRadius(20)
+                    CardView(symbol: $symbols[numbers[0]])
+                    CardView(symbol: $symbols[numbers[1]])
+                    CardView(symbol: $symbols[numbers[2]])
                     Spacer()
                 }
                 

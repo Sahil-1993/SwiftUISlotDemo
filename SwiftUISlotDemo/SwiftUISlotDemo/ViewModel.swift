@@ -12,20 +12,14 @@ struct ViewModel {
    
     func checkRandomNumbers(contentView:ContentView){
         
-        let slot1Rand = Int.random(in: 1...3)
+        contentView.numbers[0] = Int.random(in: 0..<contentView.symbols.count)
         
-        let slot2Rand = Int.random(in: 1...3)
+        contentView.numbers[1] = Int.random(in: 0..<contentView.symbols.count)
         
-        let slot3Rand = Int.random(in: 1...3)
-        print(slot2Rand)
-        print(slot1Rand)
-        print(slot3Rand)
+        contentView.numbers[2] = Int.random(in: 0..<contentView.symbols.count)
         
-        contentView.slot1 = AppStrings.imageName + ("\(slot1Rand)")
-        contentView.slot2 = AppStrings.imageName + ("\(slot2Rand)")
-        contentView.slot3 = AppStrings.imageName + ("\(slot3Rand)")
         
-        if (slot1Rand, slot2Rand) == (slot2Rand, slot3Rand) {
+        if (contentView.numbers[0], contentView.numbers[1]) == (contentView.numbers[1], contentView.numbers[2]) {
             contentView.creditScore += 50
         }else {
             if contentView.creditScore == 0 {
