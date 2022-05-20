@@ -12,12 +12,9 @@ struct ViewModel {
    
     func checkRandomNumbers(contentView:ContentView){
         
-        contentView.numbers[0] = Int.random(in: 0..<contentView.symbols.count)
-        
-        contentView.numbers[1] = Int.random(in: 0..<contentView.symbols.count)
-        
-        contentView.numbers[2] = Int.random(in: 0..<contentView.symbols.count)
-        
+        contentView.numbers = contentView.numbers.map({ _ in
+            Int.random(in: 0..<contentView.symbols.count)
+        })
         
         if (contentView.numbers[0], contentView.numbers[1]) == (contentView.numbers[1], contentView.numbers[2]) {
             contentView.creditScore += 50
